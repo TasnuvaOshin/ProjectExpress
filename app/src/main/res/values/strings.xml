@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">JoyExpress</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="businessDetails">Business Details</string>
+    <string name="nameOfYourBusiness">Name of Your Business</string>
+    <string name="mediaLink">Media Link</string>
+    <string name="address">Address</string>
+    <string name="ownerDetails">Owner Details</string>
+    <string name="businessOwnerName">Business Owner Name</string>
+    <string name="businessOwnerMobile">Business Owner Mobile Number</string>
+    <string name="businessOwnerEmail">Business Owner Email</string>
+    <string name="uploadProfileImage">Upload Profile Image</string>
+    <string name="nidNumber">NID Number</string>
+    <string name="businessLogo">Business Logo</string>
+    <string name="businessDocumentPhoto">Business Document Photo</string>
+    <string name="managerProfilePhoto">Manager Profile Photo</string>
+    <string name="operatorDetails">Operator Details</string>
+    <string name="operatorName">Operator Name</string>
+    <string name="operatorNumber">Operator Number</string>
+    <string name="operatorEmail">Operator Email</string>
+    <string name="paymentDetails">Payment Details</string>
+    <string name="paymentType">Payment Type</string>
+    <string name="terms">I agree with this Terms and Conditions *</string>
+
+</resources>

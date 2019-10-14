@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Merchant_Registration">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Merchant Registration"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/business_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/logo">
+
+                <TextView
+                    android:id="@+id/tv_bd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/businessDetails"
+                    android:textColor="#000109"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/linelay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bd"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/nameOfYourBusiness"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nyb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Business Name"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/mediaLink"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mediaLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Enter Media Link"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/address"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Enter Address"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/owner_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/business_details">
+
+                <TextView
+                    android:id="@+id/tv_ownerDerails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ownerDetails"
+                    android:textColor="#000109"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/linelay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ownerDerails"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Business Owner Name*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/businessOwnerName"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ownerDerails"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/businessOwnerName"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/bon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Business Owner Name"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/businessOwnerMobile"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Business Owner Mobile Number"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/businessOwnerEmail"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_boe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/businessOwnerEmail"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="ID Type:"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <RadioGroup
+                            android:id="@+id/idType1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_below="@+id/et_vehicle_numberPlate"
+                            android:layout_marginTop="20dp">
+
+                            <RadioButton
+                                android:id="@+id/car"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NID"
+                                android:paddingEnd="110dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"/>
+
+                            <RadioButton
+                                android:id="@+id/bike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Passport"
+                                android:paddingEnd="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"/>
+
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/idType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp">
+
+
+
+                            <RadioButton
+                                android:id="@+id/bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Birth Certificate"
+                                android:paddingEnd="55dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"/>
+
+                            <RadioButton
+                                android:id="@+id/dl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driving Licence"
+                                android:paddingEnd="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"/>
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/uploadProfileImage"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/et_upe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-condensed"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:maxLines="1"
+                                android:paddingHorizontal="10dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:paddingStart="18dp"
+                                android:paddingEnd="18dp"
+                                android:hint="@string/uploadProfileImage"
+                                android:textAlignment="gravity"
+                                android:textColorHint="#EE534C4C"
+                                android:textSize="16sp"
+                                android:background="@drawable/et_back1">
+
+                            </TextView>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:background="@drawable/et_back1"
+                                android:fontFamily="monospace"
+                                android:text="Upload"
+                                android:textAllCaps="false"
+                                android:textColor="#0C0300"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/nidNumber"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_nidN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="NID Number"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/businessLogo"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Business Logo"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/businessDocumentPhoto"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Business Document Photo"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/managerProfilePhoto"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mpp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Manager Profile Photo"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/operator_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/owner_details">
+
+                <TextView
+                    android:id="@+id/tv_od"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/operatorDetails"
+                    android:textColor="#000109"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_od"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/operatorName"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/operatorName"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/operatorNumber"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_oNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/operatorNumber"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/operatorEmail"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_oe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/operatorEmail"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/payment_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/operator_details">
+
+                <TextView
+                    android:id="@+id/tv_pd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/paymentDetails"
+                    android:textColor="#000109"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pd"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/re11"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/paymentType"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+
+
+                        <RadioGroup
+                            android:id="@+id/radiogrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:id="@+id/mobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mobile"
+                                android:paddingEnd="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"/>
+
+                            <RadioButton
+                                android:id="@+id/bank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bank"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_below="@+id/re11">
+
+                        <RadioButton
+                            android:id="@+id/terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/terms"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/re2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/re1"
+            android:paddingStart="40dp"
+            android:paddingEnd="70dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+           >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_back"
+                android:fontFamily="monospace"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#0C0300"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_back"
+                android:fontFamily="monospace"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

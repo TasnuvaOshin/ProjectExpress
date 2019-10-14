@@ -86,10 +86,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -137,10 +133,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -188,10 +180,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -271,10 +259,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -332,10 +316,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -383,10 +363,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -434,10 +410,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -577,25 +549,23 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                          >
 
 
                             <TextView
+                                android:layout_alignParentStart="true"
+
                                 android:id="@+id/et_upe"
-                                android:layout_width="match_parent"
+                                android:layout_width="250dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="6dp"
                                 android:layout_marginEnd="6dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentRight="true"
                                 android:fontFamily="sans-serif-condensed"
                                 android:inputType="text"
                                 android:maxLength="30"
@@ -605,7 +575,7 @@
                                 android:paddingBottom="14dp"
                                 android:paddingStart="18dp"
                                 android:paddingEnd="18dp"
-                                android:hint="@string/uploadProfileImage"
+                                android:hint="@string/uploadProfileI"
                                 android:textAlignment="gravity"
                                 android:textColorHint="#EE534C4C"
                                 android:textSize="16sp"
@@ -613,21 +583,26 @@
 
                             </TextView>
 
-                            
-                            <!---hello im editing this -->
+
                             <Button
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="100dp"
+                                android:layout_height="44dp"
+                                android:layout_gravity="center_horizontal"
                                 android:layout_marginStart="20dp"
-                                android:paddingTop="14dp"
-                                android:paddingBottom="14dp"
-                                android:background="@drawable/et_back1"
+                                android:background="@drawable/et_back2"
                                 android:fontFamily="monospace"
                                 android:text="Upload"
-                                android:textAllCaps="false"
-                                android:textColor="#0C0300"/>
+                                android:layout_marginTop="5dp"
 
-                        </LinearLayout>
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="false"
+
+
+
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>
 
 
 
@@ -662,10 +637,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-condensed"
                             android:inputType="text"
                             android:maxLength="30"
@@ -675,7 +646,7 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="NID Number"
+                            android:hint="@string/nidN"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -688,7 +659,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="30dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -704,42 +675,70 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_bl"
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Business Logo"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
+                            android:layout_height="match_parent"
+                            >
 
-                        </com.google.android.material.textfield.TextInputEditText>
+
+                            <TextView
+                                android:layout_alignParentStart="true"
+
+                                android:id="@+id/tv_bl"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:maxLines="1"
+                                android:paddingHorizontal="10dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:paddingStart="18dp"
+                                android:paddingEnd="18dp"
+                                android:hint="@string/businessLogo"
+                                android:textAlignment="gravity"
+                                android:textColorHint="#EE534C4C"
+                                android:textSize="16sp"
+                                android:background="@drawable/et_back1">
+
+                            </TextView>
+
+
+                            <Button
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="100dp"
+                                android:layout_height="44dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/et_back2"
+                                android:fontFamily="monospace"
+                                android:text="Upload"
+                                android:layout_marginTop="5dp"
+
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="false"
+
+
+
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>
+
+
 
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="30dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -755,43 +754,72 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_bdp"
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Business Document Photo"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
+                            android:layout_height="match_parent"
+                            >
 
-                        </com.google.android.material.textfield.TextInputEditText>
+
+                            <TextView
+                                android:layout_alignParentStart="true"
+
+                                android:id="@+id/tv_bdp"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:maxLines="1"
+                                android:paddingHorizontal="10dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:paddingStart="18dp"
+                                android:paddingEnd="18dp"
+                                android:hint="@string/businessDP"
+                                android:textAlignment="gravity"
+                                android:textColorHint="#EE534C4C"
+                                android:textSize="16sp"
+                                android:background="@drawable/et_back1">
+
+                            </TextView>
+
+
+                            <Button
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="100dp"
+                                android:layout_height="44dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/et_back2"
+                                android:fontFamily="monospace"
+                                android:text="Upload"
+                                android:layout_marginTop="5dp"
+
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="false"
+
+
+
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>
+
+
 
                     </LinearLayout>
+
+
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="30dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -807,37 +835,65 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_mpp"
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Manager Profile Photo"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
+                            android:layout_height="match_parent"
+                            >
 
-                        </com.google.android.material.textfield.TextInputEditText>
+
+                            <TextView
+                                android:layout_alignParentStart="true"
+
+                                android:id="@+id/tv_mpp"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:maxLines="1"
+                                android:paddingHorizontal="10dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:paddingStart="18dp"
+                                android:paddingEnd="18dp"
+                                android:hint="@string/managerPP"
+                                android:textAlignment="gravity"
+                                android:textColorHint="#EE534C4C"
+                                android:textSize="16sp"
+                                android:background="@drawable/et_back1">
+
+                            </TextView>
+
+
+                            <Button
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="100dp"
+                                android:layout_height="44dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/et_back2"
+                                android:fontFamily="monospace"
+                                android:text="Upload"
+                                android:layout_marginTop="5dp"
+
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="false"
+
+
+
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>
+
+
 
                     </LinearLayout>
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -1150,25 +1206,25 @@
            >
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/button_back"
+                android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Register"
                 android:textAllCaps="false"
-                android:textColor="#0C0300"/>
+                android:textColor="@color/white"/>
 
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="44dp"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/button_back"
+                android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Cancel"
                 android:textAllCaps="false"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </RelativeLayout>
 

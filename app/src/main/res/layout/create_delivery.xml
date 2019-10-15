@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Merchant_Registration">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Create Delivery Form"
+            android:textColor="#F4511E"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/business_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/logo">
+
+                <TextView
+                    android:id="@+id/tv_bd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="Recipient Details"
+                    android:textColor="#F4511E"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/linelay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bd"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Recipient Name*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nyb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Recipient Name"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Recipient Number*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mediaLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Recipient Number"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Recipient Email"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_rEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Recipient Email"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Recipient Zone"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_rZone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Recipient Zone"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Recipient Address"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_rAdress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Recipient Address"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/owner_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/business_details">
+
+                <TextView
+                    android:id="@+id/tv_ownerDerails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="Item Details"
+                    android:textColor="#F4511E"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/linelay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ownerDerails"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Business Owner Name*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="@string/businessOwnerName"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ownerDerails"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Store"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/store"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Select Store"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Product*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_bom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Select Product"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Available Quantity*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_boe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint=""
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Unit Price*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="0"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Delivery Quantity*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_dq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Delivery Quantity"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Amount to the Collected*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_ac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint=""
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Delivery Plan*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Select Delivery Plan"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Product Weight*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Select Product Weight"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Delivery Charge*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_dc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Charge"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Time Slot*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_ts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Select Time Slot"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Merchant Order ID*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_moi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="JEMO_14_05"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Package Description*"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Package Description"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/operator_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/owner_details">
+
+                <TextView
+                    android:id="@+id/tv_od"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="Other Details"
+                    android:textColor="#F4511E"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_od"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Special Instruction"
+                            android:textAllCaps="true"
+                            android:fontFamily="monospace"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingVertical="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:hint="Special Instruction"
+                            android:textAlignment="gravity"
+                            android:textColorHint="#EE534C4C"
+                            android:textSize="16sp"
+                            android:background="@drawable/et_back1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/re2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/re1"
+            android:paddingStart="40dp"
+            android:paddingEnd="70dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/et_back2"
+                android:fontFamily="monospace"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/et_back2"
+                android:fontFamily="monospace"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

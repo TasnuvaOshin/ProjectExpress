@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/ubd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Upload Bulk Delivery"
+        android:textColor="#F4511E"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/ubd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Delivery File"
+            android:textAllCaps="true"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/et_mediaLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:hint="No File Chosen"
+            android:textAlignment="gravity"
+            android:textColorHint="#EE534C4C"
+            android:textSize="16sp"
+            android:background="@drawable/et_back1">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

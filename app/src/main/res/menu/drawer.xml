@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/a">
+
+        <item android:id="@+id/nav_dashboard"
+            android:icon="@drawable/add"
+            android:title="Dashboard"/>
+
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/b">
+
+
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/add"
+            android:title="Create Delivery" />
+        <item
+            android:id="@+id/nav_import"
+            android:icon="@drawable/add"
+            android:title="Import" />
+
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/menu"
+            android:title="List of Deliveries" />
+
+        <item
+            android:id="@+id/nav_invoices"
+            android:icon="@drawable/menu"
+            android:title="List of Invoices" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/menu"
+            android:title="Aging Report" />
+
+
+        <item
+            android:id="@+id/nav_operator"
+            android:icon="@drawable/add"
+            android:title="Create Operator" />
+        <item
+            android:id="@+id/nav_listOperator"
+            android:icon="@drawable/menu"
+            android:title="List of Operators" />
+
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_create"
+            android:title="Create Store" />
+
+        <item
+            android:id="@+id/nav_listStore"
+            android:icon="@drawable/menu"
+            android:title="List of Stores" />
+
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_create"
+            android:title="Create Product" />
+
+        <item
+            android:id="@+id/nav_listProduct"
+            android:icon="@drawable/menu"
+            android:title="List of Products" />
+
+
+
+
+
+    </group>
+
+    <!--<group android:checkableBehavior="single"-->
+
+        <!--android:id="@+id/c">-->
+
+
+        <!--<item android:id="@+id/nav_about"-->
+            <!--android:icon="@drawable/about1"-->
+            <!--android:title="About Us"/>-->
+
+        <!--<item android:id="@+id/nav_help"-->
+            <!--android:icon="@drawable/ic_help"-->
+            <!--android:title="Help"/>-->
+
+        <!--<item android:id="@+id/nav_logout"-->
+            <!--android:icon="@drawable/logout"-->
+            <!--android:title="Logout"/>-->
+
+    <!--</group>-->
+
+
+</menu>

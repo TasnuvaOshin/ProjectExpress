@@ -1,331 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Merchant_Registration">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardBackgroundColor="#F4511E"
+        app:cardElevation="26dp"
+        app:cardMaxElevation="50dp">
 
         <TextView
+            android:layout_gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="60dp"
             android:gravity="center"
             android:text="Create Operator Form"
-            android:textColor="#F4511E"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
             android:fontFamily="sans-serif-medium"
-            android:textSize="30dp" />
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/title">
 
 
         <RelativeLayout
-            android:id="@+id/re1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-
-            <RelativeLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:layout_marginTop="160dp">
-
-
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Operator Name*"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_operator_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Enter Operator Name"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Phone No"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_operator_phone"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Enter Operator Phone No"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Email*"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_operator_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Enter Operator Email"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Password"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_operator_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Enter Password"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Confirm Password"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_confirm_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="Confirm Password"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/re2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/re1"
-            android:paddingStart="40dp"
-            android:paddingEnd="70dp"
-            android:layout_marginBottom="55dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            >
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Operator Name*"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_operator_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingVertical="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="Operator Name"
+                    android:textAlignment="gravity"
+                    android:textColorHint="#EE534C4C"
+                    android:textSize="16sp"
+                    android:background="@drawable/et_back1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/a"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Phone No*"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_operator_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingVertical="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="Enter Operator Phone No"
+                    android:textAlignment="gravity"
+                    android:textColorHint="#EE534C4C"
+                    android:textSize="16sp"
+                    android:background="@drawable/et_back1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/b"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Email*"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_operator_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingVertical="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="Enter Operator Email"
+                    android:textAlignment="gravity"
+                    android:textColorHint="#EE534C4C"
+                    android:textSize="16sp"
+                    android:background="@drawable/et_back1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/c"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Password*"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_operator_pasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingVertical="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="Enter Password"
+                    android:textAlignment="gravity"
+                    android:textColorHint="#EE534C4C"
+                    android:textSize="16sp"
+                    android:background="@drawable/et_back1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/d"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Confirm Password*"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_operator_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingVertical="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="Confirm Password"
+                    android:textAlignment="gravity"
+                    android:textColorHint="#EE534C4C"
+                    android:textSize="16sp"
+                    android:background="@drawable/et_back1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+
+
 
             <Button
+                android:id="@+id/btn_cancel"
                 android:layout_width="100dp"
                 android:layout_height="44dp"
-                android:layout_marginStart="20dp"
+                android:layout_below="@+id/e"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
                 android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Create"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
-
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="100dp"
                 android:layout_height="44dp"
+                android:layout_below="@+id/e"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="90dp"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Cancel"
                 android:textAllCaps="false"
                 android:textColor="@color/white"/>
-
         </RelativeLayout>
 
+
     </RelativeLayout>
-</ScrollView>
+
+
+
+
+</RelativeLayout>

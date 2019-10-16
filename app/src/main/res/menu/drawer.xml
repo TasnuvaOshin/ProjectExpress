@@ -16,6 +16,10 @@
     <group android:checkableBehavior="single"
         android:id="@+id/b">
 
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="Profile" />
 
         <item
             android:id="@+id/nav_delivery"
@@ -27,19 +31,19 @@
             android:title="Import" />
 
         <item
-            android:id="@+id/nav_information"
+            android:id="@+id/nav_listDeliveries"
             android:icon="@drawable/menu"
             android:title="List of Deliveries" />
 
         <item
-            android:id="@+id/nav_invoices"
+            android:id="@+id/nav_listInvoices"
             android:icon="@drawable/menu"
             android:title="List of Invoices" />
 
         <item
-            android:id="@+id/nav_report"
+            android:id="@+id/nav_listCancelDeliveries"
             android:icon="@drawable/menu"
-            android:title="Aging Report" />
+            android:title="List of Cancel Delivery" />
 
 
         <item

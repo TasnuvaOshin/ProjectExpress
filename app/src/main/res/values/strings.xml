@@ -32,4 +32,7 @@
     <string name="businessDP">Document Photo</string>
     <string name="managerPP">Profile Photo</string>
 
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
 </resources>

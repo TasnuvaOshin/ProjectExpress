@@ -31,21 +31,19 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         dashboard dashboard= new dashboard();
         FragmentTransaction fragmentTransaction= getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container1, dashboard).commit();
+        fragmentTransaction.addToBackStack(null);
 
 
 
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
 
-
-
-
-//        toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        toolbar.setTitleTextColor(Color.WHITE);
 
         drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
-
+        dashboard = new dashboard();
         navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -73,9 +71,9 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, new dashboard()).commit();
                 break;
 
-//            case R.id.nav_profile:
-//                startActivity((new Intent(this,.class)));
-//                break;
+            case R.id.nav_profile:
+                startActivity((new Intent(this,ProfileActivity.class)));
+                break;
 
 
             case R.id.nav_delivery:

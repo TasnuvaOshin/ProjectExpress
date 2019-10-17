@@ -1,22 +1,20 @@
 package com.sumayea.joyexpress;
 
-import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 
-public class LoginFragment extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
+    private Button Login;
 
     Handler handler= new Handler();
     Runnable runnable= new Runnable() {
@@ -32,13 +30,26 @@ public class LoginFragment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_login);
+        setContentView(R.layout.activity_login);
+
+        Login= findViewById(R.id.btn_login);
 
 
         rellay1 = (RelativeLayout)findViewById(R.id.rellay1);
         rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
 
         handler.postDelayed(runnable, 1000);
+
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoginActivity.this,Home.class);
+                startActivity(intent);
+
+
+            }
+        });
     }
 
 

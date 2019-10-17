@@ -58,7 +58,7 @@
 
 
             <RelativeLayout
-                android:id="@+id/business_details"
+                android:id="@+id/recipient_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
@@ -66,7 +66,7 @@
                 android:layout_below="@+id/logo">
 
                 <TextView
-                    android:id="@+id/tv_bd"
+                    android:id="@+id/tv_rd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
@@ -80,7 +80,7 @@
                     android:id="@+id/linelay1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_bd"
+                    android:layout_below="@+id/tv_rd"
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
 
@@ -104,7 +104,7 @@
                             android:textColor="@android:color/black"/>
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/nyb"
+                            android:id="@+id/rName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="6dp"
@@ -151,7 +151,7 @@
                             android:textColor="@android:color/black"/>
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_mediaLink"
+                            android:id="@+id/et_rNumber"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="6dp"
@@ -327,15 +327,15 @@
 
 
             <RelativeLayout
-                android:id="@+id/owner_details"
+                android:id="@+id/item_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:layout_marginTop="1dp"
-                android:layout_below="@+id/business_details">
+                android:layout_below="@+id/recipient_details">
 
                 <TextView
-                    android:id="@+id/tv_ownerDerails"
+                    android:id="@+id/tv_itemDetails"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
@@ -346,67 +346,10 @@
                     android:textSize="25dp" />
 
                 <LinearLayout
-                    android:id="@+id/linelay2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_ownerDerails"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="Business Owner Name*"
-                            android:textAllCaps="true"
-                            android:fontFamily="monospace"
-                            android:textSize="15sp"
-                            android:textColor="@android:color/black"/>
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_bon"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:inputType="text"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingVertical="10dp"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="15dp"
-                            android:hint="@string/businessOwnerName"
-                            android:textAlignment="gravity"
-                            android:textColorHint="#EE534C4C"
-                            android:textSize="16sp"
-                            android:background="@drawable/et_back1">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_ownerDerails"
+                    android:layout_below="@+id/tv_itemDetails"
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
 
@@ -523,7 +466,7 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <TextView
                             android:id="@+id/et_boe"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -541,13 +484,13 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint=""
+                            android:text="0"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
                             android:background="@drawable/et_back1">
 
-                        </com.google.android.material.textfield.TextInputEditText>
+                        </TextView>
 
                     </LinearLayout>
 
@@ -570,7 +513,7 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <TextView
                             android:id="@+id/et_up"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -588,13 +531,13 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="0"
+                            android:text="0"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
                             android:background="@drawable/et_back1">
 
-                        </com.google.android.material.textfield.TextInputEditText>
+                        </TextView>
 
                     </LinearLayout>
 
@@ -664,7 +607,7 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <TextView
                             android:id="@+id/et_ac"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -688,7 +631,7 @@
                             android:textSize="16sp"
                             android:background="@drawable/et_back1">
 
-                        </com.google.android.material.textfield.TextInputEditText>
+                        </TextView>
 
                     </LinearLayout>
 
@@ -804,7 +747,7 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <TextView
                             android:id="@+id/et_dc"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -828,7 +771,7 @@
                             android:textSize="16sp"
                             android:background="@drawable/et_back1">
 
-                        </com.google.android.material.textfield.TextInputEditText>
+                        </TextView>
 
                     </LinearLayout>
 
@@ -900,7 +843,7 @@
                             android:textSize="15sp"
                             android:textColor="@android:color/black"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <TextView
                             android:id="@+id/et_moi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -924,7 +867,7 @@
                             android:textSize="16sp"
                             android:background="@drawable/et_back1">
 
-                        </com.google.android.material.textfield.TextInputEditText>
+                        </TextView>
 
                     </LinearLayout>
 
@@ -982,12 +925,12 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/operator_details"
+                android:id="@+id/other_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:layout_marginTop="1dp"
-                android:layout_below="@+id/owner_details">
+                android:layout_below="@+id/item_details">
 
                 <TextView
                     android:id="@+id/tv_od"

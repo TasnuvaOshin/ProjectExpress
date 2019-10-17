@@ -19,11 +19,12 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:background="@color/white"
+            android:background="@color/gradStart"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:elevation="6dp"
-            app:titleTextColor="#F8F5F5">
+            app:titleTextColor="@android:color/white"
+            android:textAlignment="gravity">
 
             <!--<SearchView-->
             <!--android:id="@+id/search_law"-->
@@ -37,14 +38,14 @@
             <!--android:inputType="text"-->
             <!--android:padding="20dp" />-->
 
-            <ImageButton
+            <!--<ImageButton-->
 
-                android:id="@+id/addC"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="end"
-                android:background="@android:color/transparent"
-                android:src="@drawable/add" />
+                <!--android:id="@+id/addC"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:src="@drawable/add" />-->
 
         </androidx.appcompat.widget.Toolbar>
 

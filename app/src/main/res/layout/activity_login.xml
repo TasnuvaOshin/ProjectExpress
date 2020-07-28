@@ -28,7 +28,7 @@
             android:id="@+id/rellay1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/logo">
 
@@ -68,7 +68,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:background="@drawable/et_bg"
+                        android:background="@drawable/et_back1"
                         android:layout_marginTop="1dp"
                         android:fontFamily="monospace"
                         android:paddingLeft="15dp"
@@ -96,7 +96,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:background="@drawable/et_bg"
+                        android:background="@drawable/et_back1"
                         android:layout_marginTop="1dp"
                         android:fontFamily="monospace"
                         android:paddingLeft="15dp"
@@ -110,19 +110,19 @@
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_width="201dp"
+                android:layout_height="37dp"
                 android:layout_below="@id/linelay1"
-                android:layout_marginTop="50dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="monospace"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:fontFamily="monospace"
-                android:textColor="@android:color/black"
-                android:textSize="16dp"
-                android:background="@drawable/btn_bg"
-                android:paddingRight="70dp"
-                android:paddingLeft="70dp"/>
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
 
 
         </RelativeLayout>
@@ -136,42 +136,28 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:visibility="gone"
+            android:visibility="visible"
 
             android:layout_alignParentBottom="true">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:fontFamily="monospace"
-                android:text="Signup"
-                android:textAllCaps="false"
-                android:textColor="@android:color/black"/>
-
 
             <Button
+                android:id="@+id/btn_registration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="84dp"
                 android:background="@color/transparent"
                 android:fontFamily="monospace"
-                android:text="Forgot password?"
+                android:text="Registration"
                 android:textAllCaps="false"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/holo_red_light" />
 
         </RelativeLayout>
 
 
 
     </RelativeLayout>
-
-
-
-
-
-
-
 
 
 

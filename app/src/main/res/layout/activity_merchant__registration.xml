@@ -95,7 +95,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="Business Name"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -142,7 +141,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="Enter Media Link"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -189,7 +187,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="Enter Address"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -268,7 +265,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="@string/businessOwnerName"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -325,7 +321,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="Business Owner Name"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -372,7 +367,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="Business Owner Mobile Number"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -419,7 +413,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="@string/businessOwnerEmail"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -465,7 +458,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NID"
-                                android:paddingEnd="110dp"
+                                android:paddingEnd="128dp"
                                 android:textColor="@android:color/black"
                                 android:textSize="15sp"/>
 
@@ -575,7 +568,6 @@
                                 android:paddingBottom="14dp"
                                 android:paddingStart="18dp"
                                 android:paddingEnd="18dp"
-                                android:hint="@string/uploadProfileI"
                                 android:textAlignment="gravity"
                                 android:textColorHint="#EE534C4C"
                                 android:textSize="16sp"
@@ -585,22 +577,21 @@
 
 
                             <Button
-                                android:layout_alignParentEnd="true"
                                 android:layout_width="100dp"
-                                android:layout_height="44dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="6dp"
                                 android:background="@drawable/et_back2"
                                 android:fontFamily="monospace"
-                                android:text="Upload"
-                                android:layout_marginTop="5dp"
 
-                                android:layout_marginEnd="6dp"
+                                android:text="Upload"
                                 android:textAllCaps="false"
 
 
-
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/white" />
 
                         </RelativeLayout>
 
@@ -646,7 +637,6 @@
                             android:paddingBottom="15dp"
                             android:paddingStart="15dp"
                             android:paddingEnd="15dp"
-                            android:hint="@string/nidN"
                             android:textAlignment="gravity"
                             android:textColorHint="#EE534C4C"
                             android:textSize="16sp"
@@ -701,7 +691,6 @@
                                 android:paddingBottom="14dp"
                                 android:paddingStart="18dp"
                                 android:paddingEnd="18dp"
-                                android:hint="@string/businessLogo"
                                 android:textAlignment="gravity"
                                 android:textColorHint="#EE534C4C"
                                 android:textSize="16sp"
@@ -711,22 +700,21 @@
 
 
                             <Button
-                                android:layout_alignParentEnd="true"
                                 android:layout_width="100dp"
-                                android:layout_height="44dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="6dp"
                                 android:background="@drawable/et_back2"
                                 android:fontFamily="monospace"
-                                android:text="Upload"
-                                android:layout_marginTop="5dp"
 
-                                android:layout_marginEnd="6dp"
+                                android:text="Upload"
                                 android:textAllCaps="false"
 
 
-
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/white" />
 
                         </RelativeLayout>
 
@@ -780,7 +768,6 @@
                                 android:paddingBottom="14dp"
                                 android:paddingStart="18dp"
                                 android:paddingEnd="18dp"
-                                android:hint="@string/businessDP"
                                 android:textAlignment="gravity"
                                 android:textColorHint="#EE534C4C"
                                 android:textSize="16sp"
@@ -790,22 +777,21 @@
 
 
                             <Button
-                                android:layout_alignParentEnd="true"
                                 android:layout_width="100dp"
-                                android:layout_height="44dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="6dp"
                                 android:background="@drawable/et_back2"
                                 android:fontFamily="monospace"
-                                android:text="Upload"
-                                android:layout_marginTop="5dp"
 
-                                android:layout_marginEnd="6dp"
+                                android:text="Upload"
                                 android:textAllCaps="false"
 
 
-
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/white" />
 
                         </RelativeLayout>
 
@@ -861,7 +847,6 @@
                                 android:paddingBottom="14dp"
                                 android:paddingStart="18dp"
                                 android:paddingEnd="18dp"
-                                android:hint="@string/managerPP"
                                 android:textAlignment="gravity"
                                 android:textColorHint="#EE534C4C"
                                 android:textSize="16sp"
@@ -871,22 +856,21 @@
 
 
                             <Button
-                                android:layout_alignParentEnd="true"
                                 android:layout_width="100dp"
-                                android:layout_height="44dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="6dp"
                                 android:background="@drawable/et_back2"
                                 android:fontFamily="monospace"
-                                android:text="Upload"
-                                android:layout_marginTop="5dp"
 
-                                android:layout_marginEnd="6dp"
+                                android:text="Upload"
                                 android:textAllCaps="false"
 
 
-
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/white" />
 
                         </RelativeLayout>
 
@@ -1020,25 +1004,27 @@
            >
 
             <Button
+                android:id="@+id/btn_registration"
                 android:layout_width="100dp"
-                android:layout_height="44dp"
+                android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Register"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
 
             <Button
+                android:id="@+id/btn_cancel"
                 android:layout_width="100dp"
-                android:layout_height="44dp"
+                android:layout_height="34dp"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/et_back2"
                 android:fontFamily="monospace"
                 android:text="Cancel"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 

@@ -46,34 +46,35 @@
             android:title="List of Cancel Delivery" />
 
 
-        <item
-            android:id="@+id/nav_operator"
-            android:icon="@drawable/add"
-            android:title="Create Operator" />
-        <item
-            android:id="@+id/nav_listOperator"
-            android:icon="@drawable/menu"
-            android:title="List of Operators" />
+<!--        <item-->
+<!--            android:id="@+id/nav_operator"-->
+<!--            android:icon="@drawable/add"-->
+<!--            android:title="Create Operator" />-->
+<!--        -->
+<!--        <item-->
+<!--            android:id="@+id/nav_listOperator"-->
+<!--            android:icon="@drawable/menu"-->
+<!--            android:title="List of Operators" />-->
 
-        <item
-            android:id="@+id/nav_store"
-            android:icon="@drawable/ic_create"
-            android:title="Create Store" />
+<!--        <item-->
+<!--            android:id="@+id/nav_store"-->
+<!--            android:icon="@drawable/ic_create"-->
+<!--            android:title="Create Store" />-->
 
-        <item
-            android:id="@+id/nav_listStore"
-            android:icon="@drawable/menu"
-            android:title="List of Stores" />
+<!--        <item-->
+<!--            android:id="@+id/nav_listStore"-->
+<!--            android:icon="@drawable/menu"-->
+<!--            android:title="List of Stores" />-->
 
-        <item
-            android:id="@+id/nav_product"
-            android:icon="@drawable/ic_create"
-            android:title="Create Product" />
+<!--        <item-->
+<!--            android:id="@+id/nav_product"-->
+<!--            android:icon="@drawable/ic_create"-->
+<!--            android:title="Create Product" />-->
 
-        <item
-            android:id="@+id/nav_listProduct"
-            android:icon="@drawable/menu"
-            android:title="List of Products" />
+<!--        <item-->
+<!--            android:id="@+id/nav_listProduct"-->
+<!--            android:icon="@drawable/menu"-->
+<!--            android:title="List of Products" />-->
 
 
 

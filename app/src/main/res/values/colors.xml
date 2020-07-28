@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#D81B60</color>
-    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryDark">#F4511E</color>
     <color name="colorAccent">#D81B60</color>
 
 
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
-    <color name="gradStart">#F4511E</color>
+    <color name="gradStart">#D7F4511E</color>
     <color name="gradStop">#000000</color>
     <color name="black">#000000</color>
 </resources>

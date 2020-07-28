@@ -7,37 +7,13 @@
 
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_alignParentTop="true"
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        app:cardBackgroundColor="#F4511E"
-        app:cardElevation="26dp"
-        app:cardMaxElevation="50dp">
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="Store Create Form"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="18sp" />
-
-
-    </androidx.cardview.widget.CardView>
-
 
     <RelativeLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@id/title">
+        android:layout_marginRight="10dp">
 
 
         <RelativeLayout

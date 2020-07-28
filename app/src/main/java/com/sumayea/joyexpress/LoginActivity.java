@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
-    private Button Login;
+    private Button Login, Registration;
 
     Handler handler= new Handler();
     Runnable runnable= new Runnable() {
@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Login= findViewById(R.id.btn_login);
+        Registration= findViewById(R.id.btn_registration);
 
 
         rellay1 = (RelativeLayout)findViewById(R.id.rellay1);
@@ -45,16 +46,27 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(LoginActivity.this,Home.class);
+                onBackPressed();
                 startActivity(intent);
+
+
+
+            }
+        });
+
+        Registration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoginActivity.this,Merchant_Registration.class);
+                onBackPressed();
+                startActivity(intent);
+
 
 
             }
         });
     }
-
-
-
-
 
 
 }
